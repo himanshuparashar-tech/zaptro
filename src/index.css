@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Clerk User Button */
+
+.cl-avatarBox {
+    width: 3rem;
+    height: 3rem;
+}
