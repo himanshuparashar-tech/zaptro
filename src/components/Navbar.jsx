@@ -19,14 +19,14 @@ const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
                 {/* Logo Section */}
                 <div className='flex gap-7 items-center'>
                     <Link to={'/'}>
-                        <h1 className='font-bold text-3xl'><span className='text-red-500 font-serif'>F</span>lapy</h1>
+                        <h1 className='font-bold text-3xl'><span className='text-red-500 font-serif'>H</span>eller</h1>
                     </Link>
 
                     <div className='flex gap-1 cursor-pointer text-gray-700 items-center'>
                         <MapPin className='text-red-500' />
                         <span className='font-semibold'>{location ? (<div className='-space-y-2'>
                             <p>{location.country}</p>
-                            <p>{location.state}</p>
+                            <p>{location.city}</p>
                         </div>) : "Add Address"}</span>
                         <FaCaretDown onClick={(toggleDropdown)} />
                     </div>
