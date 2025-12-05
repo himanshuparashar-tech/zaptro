@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import { DataContext } from '../context/dataContext'
 
 const Carousel = () => {
+    const { data, fetchAllProducts } = useContext(DataContext)
+
+    useEffect(() => {
+        fetchAllProducts()
+    }, [])
+
     return (
-        <div>Carousel</div>
+        <div>
+
+        </div>
     )
 }
 
