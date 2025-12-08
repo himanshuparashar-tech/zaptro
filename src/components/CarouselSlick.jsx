@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import { dataContexts } from "../context/dataContexts";
 import Slider from "react-slick";
+import { dataContexts } from "../context/DataContexts";
 
 // Slick required CSS
 // import "slick-carousel/slick/slick.css";

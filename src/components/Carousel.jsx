@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useRef } from "react";
-import { dataContexts } from "../context/dataContexts";
 import "../swiper.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,6 +7,7 @@ import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { dataContexts } from "../context/DataContexts";
 
 const Carousel = () => {
   const { data, fetchAllProducts } = useContext(dataContexts);
