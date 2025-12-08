@@ -1,5 +1,5 @@
 import axios from "axios";
-import {createContext, useState } from "react";
+import {createContext, useContext, useState } from "react";
 
 export const dataContexts = createContext(null);
 
@@ -10,7 +10,7 @@ export const DataProvider = ({ children }) => {
     const fetchAllProducts = async () => {
         try {
             const response = await axios.get("https://api.escuelajs.co/api/v1/products")
-            console.log(response)
+            // console.log(response)
             const productsData = response.data
             setData(productsData)
         }
@@ -22,5 +22,11 @@ export const DataProvider = ({ children }) => {
     return <dataContexts.Provider value={{ data, setData, fetchAllProducts }}>
         {children}
     </dataContexts.Provider>
+}
+
+export const getData = () => {
+    return(
+        useContext(dataContexts)
+    )
 }
 
