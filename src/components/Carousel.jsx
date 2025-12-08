@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
-import { DataContexts } from "../context/DataContexts";
+import { DataContexts } from "../context/dataContexts";
 import "../swiper.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";

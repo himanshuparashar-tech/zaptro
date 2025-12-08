@@ -1,7 +1,7 @@
 import axios from "axios";
 import {createContext, useState } from "react";
 
-export const DataContexts = createContext(null);
+export const dataContexts = createContext(null);
 
 export const DataProvider = ({ children }) => {
     const [data, setData] = useState([]);
@@ -19,8 +19,8 @@ export const DataProvider = ({ children }) => {
         }
     }
 
-    return <DataContexts.Provider value={{ data, setData, fetchAllProducts }}>
+    return <dataContexts.Provider value={{ data, setData, fetchAllProducts }}>
         {children}
-    </DataContexts.Provider>
+    </dataContexts.Provider>
 }
 
