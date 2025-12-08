@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { DataContexts } from "../context/dataContexts";
+import { dataContexts } from "../context/dataContexts";
 import Slider from "react-slick";
 
 // // Slick CSS (YOUR COMMENTED CODE SHOULD BE ENABLED)
@@ -9,7 +9,7 @@ import Slider from "react-slick";
 const TOTAL_DOTS = 7; // ⭐ Fixed number of dots
 
 const CarouselSlick = () => {
-  const { data, fetchAllProducts } = useContext(DataContexts);
+  const { data, fetchAllProducts } = useContext(dataContexts);
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
