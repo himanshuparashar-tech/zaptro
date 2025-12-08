@@ -5,10 +5,13 @@ import { CgClose } from 'react-icons/cg';
 import { FaCaretDown } from 'react-icons/fa';
 import { IoCartOutline } from 'react-icons/io5';
 import { Link, NavLink } from 'react-router-dom';
+import images from "../assets/images";
+
+
 
 const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
 
-    
+
     const toggleDropdown = () => {
         setOpenDropdown(!openDropdown)
     }
@@ -18,8 +21,14 @@ const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
             <div className="max-w-6xl mx-auto flex justify-between items-center">
                 {/* Logo Section */}
                 <div className='flex gap-7 items-center'>
-                    <Link to={'/'}>
-                        <h1 className='font-bold text-3xl'><span className='text-red-500 font-serif'>H</span>eller</h1>
+                    <Link to={'/'} style={{ lineHeight: '12px', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                        <h1 className='font-bold text-xl'>
+                            <img src={images.logoJpg} alt="logo" className="w-8 h-8" />
+                        </h1>
+                        <small className='font-bold'>
+                            <small className='text-red-500 font-serif'>시타</small>-람
+                        </small>
+
                     </Link>
 
                     <div className='flex gap-1 cursor-pointer text-gray-700 items-center'>
@@ -41,7 +50,7 @@ const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
                     }
 
                 </div>
-                    
+
                 {/* Menu Section */}
                 <nav className='flex gap-7 items-center'>
                     <ul className='flex gap-7 items-center text-xl font-semibold'>

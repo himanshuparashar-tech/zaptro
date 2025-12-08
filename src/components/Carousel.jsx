@@ -21,7 +21,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="p-4 relative">
+    <div className="relative">
 
       {/* ⭐ Custom Prev Arrow */}
       <button
