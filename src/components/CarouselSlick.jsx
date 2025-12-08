@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { DataContext } from "../context/DataContext";
+import { DataContexts } from "../context/DataContexts";
 import Slider from "react-slick";
 
 // Slick required CSS
@@ -7,7 +7,7 @@ import Slider from "react-slick";
 // import "slick-carousel/slick/slick-theme.css";
 
 const CarouselSlick = () => {
-  const { data, fetchAllProducts } = useContext(DataContext);
+  const { data, fetchAllProducts } = useContext(DataContexts);
 
   useEffect(() => {
     fetchAllProducts();

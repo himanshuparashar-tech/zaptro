@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
-import { DataContext } from "../context/DataContext";
+import { DataContexts } from "../context/DataContexts";
 import "../swiper.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Carousel = () => {
-  const { data, fetchAllProducts } = useContext(DataContext);
+  const { data, fetchAllProducts } = useContext(DataContexts);
 
   // ⭐ Refs for custom arrows
   const prevRef = useRef(null);
