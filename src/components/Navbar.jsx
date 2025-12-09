@@ -21,7 +21,7 @@ const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
             <div className="max-w-6xl mx-auto flex justify-between items-center">
                 {/* Logo Section */}
                 <div className='flex gap-7 items-center'>
-                    <Link to={'/'} style={{ lineHeight: '12px', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                    <Link to={'/'} style={{ lineHeight: '12px', display: 'flex', alignItems: 'center', flexDirection: 'column', minWidth: '50px' }}>
                         <h1 className='font-bold text-xl'>
                             <img src={images.logoJpg} alt="logo" className="w-8 h-8" />
                         </h1>

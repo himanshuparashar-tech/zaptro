@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Carts from "./pages/Carts";
 import Navbar from "./components/Navbar";
 import axios from "axios";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -49,8 +50,8 @@ const App = () => {
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/cart" element={<Carts />}></Route>
-
         </Routes>
+        <Footer />
       </BrowserRouter >
     </>
   )
